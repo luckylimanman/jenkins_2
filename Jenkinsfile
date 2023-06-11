@@ -1,12 +1,10 @@
 pipeline {
-    agent {
-        label '!windows'
-    }
+    agent any
 
-    environment {
-        DISABLE_AUTH = 'true'
-        DB_ENGINE    = 'sqlite'
-    }
+    // environment {
+    //     DISABLE_AUTH = 'true'
+    //     DB_ENGINE    = 'sqlite'
+    // }
 
     stages {
         stage('Prepare') {
