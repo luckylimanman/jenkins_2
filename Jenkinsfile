@@ -19,7 +19,7 @@ pipeline {
                 // npm install
                 // node index.js
                 // '''
-                echo 'hello'
+                sh 'echo "Hello World"'
             }
         }
     }
