@@ -7,17 +7,19 @@ pipeline {
     // }
 
     stages {
-        stage('Prepare') {
-            steps {
-                git branch: main, url: 'https://gitlab.cee.redhat.com/cplabstests/e2e.git'
-                }
-        }
+        // stage('Prepare') {
+        //     steps {
+                
+        //         }
+        // }
         stage('Build') {
             steps {
-                sh '''
-                npm install
-                node index.js
-                '''
+                // git branch: main, url: 'https://gitlab.cee.redhat.com/cplabstests/e2e.git'
+                // sh '''
+                // npm install
+                // node index.js
+                // '''
+                echo 'hello'
             }
         }
     }
